@@ -9,3 +9,7 @@ function get_CURL($url)
 
   return json_decode($result, true);
 }
+
+$result = get_CURL('https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics,contentDetails,invideoPromotion&id=UCnCnWrrvgh7Is24mMAeZFiQ&key=AIzaSyAJhmsIfYl7lhj5ajP2Wb4PGKS--fAr0FM');
+
+?>
