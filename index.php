@@ -12,4 +12,10 @@ function get_CURL($url)
 
 $result = get_CURL('https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics,contentDetails,invideoPromotion&id=UCnCnWrrvgh7Is24mMAeZFiQ&key=AIzaSyAJhmsIfYl7lhj5ajP2Wb4PGKS--fAr0FM');
 
-?>
+$youtubepic = $result['items'][0]['snippet']['thumbnails']['medium']['url'];
+
+$youtubetitle = $result['items'][0]['snippet']['title'];
+
+$youtubesubs = $result['items'][0]['statistics']['subscriberCount'];
+
+$youtubedes = $result['items'][0]['snippet']['description'];
