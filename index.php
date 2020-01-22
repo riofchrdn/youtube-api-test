@@ -19,3 +19,9 @@ $youtubetitle = $result['items'][0]['snippet']['title'];
 $youtubesubs = $result['items'][0]['statistics']['subscriberCount'];
 
 $youtubedes = $result['items'][0]['snippet']['description'];
+
+$urlLatestVideo = 'https://www.googleapis.com/youtube/v3/search?key=AIzaSyAJhmsIfYl7lhj5ajP2Wb4PGKS--fAr0FM&channelId=UCnCnWrrvgh7Is24mMAeZFiQ&maxResults=1&order=date&part=snippet';
+
+$result = get_CURL($urlLatestVideo);
+
+$LatestVideoID = $result['items'][0]['id']['videoId'];
