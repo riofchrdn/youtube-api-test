@@ -1,0 +1,7 @@
+API CLIENT
+
+~ file_get_content()
+
+~ ajax
+
+~ cURL
